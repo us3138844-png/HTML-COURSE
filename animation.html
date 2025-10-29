@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        background-image: url(./bg\ stars.jpg);
+        background-size: 100%;
+    }
+    .sun{
+        height: 180px;
+        width: 180px;
+        background-image: url(./isolated-realistic-sun-illustration-png.webp);
+        border-radius: 50%;
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .mercury{
+height: 20px;
+width: 20px;
+background: radial-gradient(circle,#935f2a 60% #54370c 75%);
+border-radius: 50%;
+position: absolute;
+box-shadow: -4px 2px 56px #f9c05f;
+Left: 43%;
+top: 42%;
+transform: translate(-50%,-50%);
+animation:orbit2 2s linear infinite;
+   }
+   @keyframes orbit2{
+from{transform:rotate(0deg)translateX(70px) rotate(0deg);}
+to{transform:rotate(360deg)translateX(70px) rotate(-360deg);}
+
+}
+
+p{
+
+color: white;
+font-family: system-ui;
+position: absolute;
+Left: -62px;
+top: -11px;}
+  
+</style>
+<body>
+    <div class="sun"></div>
+    <div class="mercury-outline">
+        <div class="mercury">
+            <p>Mercury</p>
+        </div>
+    </div>
+</body>
+</html>
